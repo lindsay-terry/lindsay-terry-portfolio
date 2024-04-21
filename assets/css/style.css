@@ -7,6 +7,7 @@
 body {
     line-height: 1.5;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     font-family: 'Nimbus Mono PS', 'Courier New', monospace;
     font-size: 18px;
@@ -55,7 +56,7 @@ li {
     justify-content: space-around;
 }
 
-a {
+li a {
     text-decoration: none;
     color: var(--dk-text);
     font-weight: bold;
@@ -70,7 +71,7 @@ main {
 }
 
 main h2 {
-    flex: 1 0 25%;
+    flex: 0 0 25%;
     border-right: solid 1px var(--ltblue);
 }
 
@@ -84,36 +85,118 @@ p {
     padding: 20px;
 }
 
+
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border: solid 1px;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    width: 50%;
+    flex: 1 0 auto;
+}
+
+.card a {
+    display: flex;
+}
+
+.card img {
+    width: 45%;
+    position: relative;
+    flex: 0 0 100%; 
+    max-width: 450px;
+}
+.card p {
+    position: absolute;
+    color: var(--ltblue);
+    background-color: var(--dark);
+    text-decoration: none;
+    margin: 10rem -7rem 0rem 3rem;
+
+
+
+}
+
+/*
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Border and size for all images
+.projects img {
+   /* flex: 0 0 25%;
+    width: 45%; 
+    border: 5px solid var(--ltblue);
+    margin: 5px;
+}
+
+.first-project,
+.new-project {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.first-project img {
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+.new-project img {
+    width: 45%;
+}
+
+.first-project p,
+.new-project p {
+    position: absolute;
+    background-color: var(--dark);
+    color: var(--ltblue);
+    font-weight: bold;
+}
+
+.first-project p {
+    margin-top: 61%;
+    margin-right: 73%;
+    font-size: 1.2vw;
+}
+
+.new-project p {
+    margin-top: 61%;
+    margin-right: 73%;
+    font-size: 1.2vw;
+}
+
+
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid;
 }
 
-.project-one-text {
+.projects a {
     display: flex;
-    position: relative;
-    margin: 0;
-    
 }
 
-.project-one-text p {
-    position: absolute;
-    bottom: 30px;
-    right: 70px;
-    font-weight: bolder;
-    background-color: var(--dark);
-    color: var(--ltblue);
-    margin: 0;
-    opacity: 0.5;
-    width: 200px;
-    flex: 0 0 100%;
-}
 .first-project {
     flex: 1 0 auto;
     padding: 30px;
     width: 100%;
     max-width: 83%;
+    margin-left: 20px;
     
 }
 
@@ -127,13 +210,12 @@ p {
     max-width: 50%;
     max-height: 200px;
     width: 33%;
-    justify-content: space-evenly;
     margin: 5px;
     padding: 5px;
     
     
 }
-
+*/
 
 
 
@@ -147,15 +229,12 @@ p {
         flex: 0 0 45%;
     }
 
-    
 }
 
 @media screen and (max-width: 768px) {
-    .first-project,
-    .new-project {
-        width: 100%;
-    }
-
+   .card {
+    width: 100%;
+   }
     header {
         flex-direction: column;
         height: 600px;
