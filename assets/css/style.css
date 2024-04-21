@@ -94,39 +94,54 @@ p {
     
 }
 
+.top-card,
 .card {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     border: solid 1px;
     justify-content: center;
-    width: 450px;
     height: 450px;
     width: 50%;
-    flex: 1 0 auto;
+    flex: 0 0 450px;
+    align-items: center;
 }
 
+.top-card {
+    flex: 1 0 450px;
+}
+
+.top-card a,
 .card a {
     display: flex;
 }
 
+
+.top-card img,
 .card img {
-    width: 45%;
+    width: 100%;
     position: relative;
     flex: 0 0 100%; 
-    max-width: 450px;
+    max-width: 100%;
+    border: 5px solid var(--ltblue);
+    height: 300px;
+    opacity: 0.5;
 }
-.card p {
+.card p,
+.top-card p {
     position: absolute;
     color: var(--ltblue);
     background-color: var(--dark);
     text-decoration: none;
     margin: 10rem -7rem 0rem 3rem;
-
-
-
 }
 
+.top-card img:hover {
+    opacity:1;
+}
+.card img:hover {
+    opacity: 1;
+}
 /*
 
 .projects {
