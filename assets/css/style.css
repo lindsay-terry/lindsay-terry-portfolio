@@ -1,7 +1,6 @@
 :root {
     --dark: rgb(13, 13, 71);
     --ltblue: rgb(92, 181, 195);
-
 }
 
 body {
@@ -28,14 +27,6 @@ h1 {
 
 h2 {
     font-size: 160%;
-}
-
-.intro {
-    flex: 0 0 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
 }
 
 header img {
@@ -85,16 +76,27 @@ p {
     padding: 20px;
 }
 
-
-
+.intro {
+    flex: 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+/*Styling for each project*/
 .project-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    align-items: center;
 }
 
-.top-card,
+.top-card {
+    width: 100%;
+    padding: 50px;
+    position: relative;
+}
+
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -107,15 +109,10 @@ p {
     align-items: center;
 }
 
-.top-card {
-    flex: 1 0 450px;
-}
-
 .top-card a,
 .card a {
     display: flex;
 }
-
 
 .top-card img,
 .card img {
@@ -133,6 +130,14 @@ p {
     color: var(--ltblue);
     background-color: var(--dark);
     text-decoration: none;
+}
+
+/*Positioning for title text*/
+.top-card p {
+    margin: -6rem 0rem 0rem 2rem;
+}
+
+.card p {
     margin: 10rem -7rem 0rem 3rem;
 }
 
@@ -142,106 +147,14 @@ p {
 .card img:hover {
     opacity: 1;
 }
-/*
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-/*Border and size for all images
-.projects img {
-   /* flex: 0 0 25%;
-    width: 45%; 
-    border: 5px solid var(--ltblue);
-    margin: 5px;
-}
-
-.first-project,
-.new-project {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.first-project img {
-    width: 100%;
-    flex: 1 0 auto;
-}
-
-.new-project img {
-    width: 45%;
-}
-
-.first-project p,
-.new-project p {
-    position: absolute;
-    background-color: var(--dark);
-    color: var(--ltblue);
-    font-weight: bold;
-}
-
-.first-project p {
-    margin-top: 61%;
-    margin-right: 73%;
-    font-size: 1.2vw;
-}
-
-.new-project p {
-    margin-top: 61%;
-    margin-right: 73%;
-    font-size: 1.2vw;
-}
-
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    border: 1px solid;
-}
-
-.projects a {
-    display: flex;
-}
-
-.first-project {
-    flex: 1 0 auto;
-    padding: 30px;
-    width: 100%;
-    max-width: 83%;
-    margin-left: 20px;
-    
-}
-
-.first-project:hover {
-    content: 'Landing Page';
-    box-shadow: 0 0 2px var(--ltblue);
-    opacity: 0.5;
-}
-
-.new-project {
-    max-width: 50%;
-    max-height: 200px;
-    width: 33%;
-    margin: 5px;
-    padding: 5px;
-    
-    
-}
-*/
-
-
-
-
-#myWork {
-
-}
 
 @media screen and (max-width: 992px) {
     .intro {
         flex: 0 0 45%;
+    }
+
+    .card {
+        
     }
 
 }
