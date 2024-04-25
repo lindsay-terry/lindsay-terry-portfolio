@@ -12,9 +12,9 @@ N/A
 
 This portfolio proves a short description to get to know a little about me, as well as previews of my work.  The top picture, larger than the others, serves as a preview and a link to my first project.  Hovering over the image, the user will notice a border and opacity change, and clicking on the image will send the user directly to the deployed application.  The coming soon projects are not yet linked to projects, so clicking them will return the user to the top of the page.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+Click [here](https://lindsay-terry.github.io/lindsay-terry-portfolio/) to see deployed application.
 
-![alt text](assets/images/screenshot.png)
+![Screenshot of demployed application](assets/images/screenshot.png)
 
 ## Credits
 
