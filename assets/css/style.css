@@ -14,6 +14,7 @@ body {
     color: var(--dark);
 }
 
+/*Header and nav styling*/
 header {
     height: 18.75rem;
     width: 100%;
@@ -37,7 +38,6 @@ header img {
 ul {
     display: flex;
     flex-direction: column;
-    
 }
 
 li {
@@ -54,6 +54,15 @@ li a {
     font-size: 20px;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 55%;
+    padding: 10px;
+}
+
+/*Styling for main section of page*/
 main {
     display: flex;
     flex-direction: column;
@@ -72,30 +81,8 @@ section {
     padding: 20px;
 }
 
-/* Make Github link correct color */
-section li a {
-    color: var(--ltblue);
-}
-
 p {
     padding: 20px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--ltblue);
-    border-top: 5px solid var(--accent);
-    padding: 20px;
-    font-size: 110%;
-}
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 0 0 55%;
-    padding: 10px;
 }
 
 /*Container for all project*/
@@ -105,6 +92,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* Top project that appears larger than others*/
 .top-card {
     width: 100%;
@@ -135,10 +123,10 @@ footer {
     height: 100%;
 }
 
+/*Styling for both project types*/
 .top-card a,
 .card a {
     display: flex;
-    justify-content: center;
 }
 
 .top-card img,
@@ -181,6 +169,19 @@ a:any-link:hover {
     color: var(--accent);
 }
 
+/* Override text color for links for Github link */
+section li a {
+    color: var(--ltblue);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--ltblue);
+    border-top: 5px solid var(--accent);
+    padding: 20px;
+    font-size: 110%;
+}
 
 @media screen and (max-width: 992px) {
     .intro {
