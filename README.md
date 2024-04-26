@@ -16,7 +16,7 @@ This portfolio proves a short description to get to know a little about me, as w
 
 Click [here](https://lindsay-terry.github.io/lindsay-terry-portfolio/) to see deployed application.
 
-![Screenshot of demployed application](assets/images/screenshot.png)
+![Screenshot of demployed application](assets/images/screenshot2.png)
 
 ## Credits
 
