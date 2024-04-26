@@ -43,7 +43,7 @@ ul {
 li {
     display: flex;
     flex-direction: column;
-    padding: 30px 30px 30px 20px; 
+    padding: 30px 20px 25px 20px;
     justify-content: space-around;
 }
 
@@ -62,7 +62,7 @@ li a {
     padding: 10px;
 }
 
-/*Styling for main section of page*/
+/*Styling for main elements of page*/
 main {
     display: flex;
     flex-direction: column;
@@ -70,7 +70,8 @@ main {
     border-top: 5px solid var(--accent);
 }
 
-main h2 {
+h3 {
+    font-size: 150%;
     flex: 0 0 20%;
     border-right: solid 1px var(--ltblue);
 }
@@ -85,7 +86,7 @@ p {
     padding: 20px;
 }
 
-/*Container for all project*/
+/*Container for all projects*/
 .project-cards {
     display: flex;
     flex-wrap: wrap;
@@ -103,10 +104,6 @@ p {
     
 }
 
-.top-card img {
-    flex: 1 0 100%;
-}
-
 /*Other projects*/
 .card {
     display: flex;
@@ -115,12 +112,8 @@ p {
     height: 350px;
     flex: 0 0 45%;
     margin: 10px;
+    max-width: 475px;
     
-}
-
-.card img {
-    flex: 0 0 100%;
-    height: 100%;
 }
 
 /*Styling for both project types*/
@@ -148,16 +141,6 @@ p {
     border: 1px solid var(--accent);
 }
 
-/*Positioning for title text*/
-.top-card p {
-    width: 20%;
-    
-}
-
-.card p {
-    width: 30%;
-}
-
 /*Designs on hover*/
 .top-card img:hover,
 .card img:hover {
@@ -169,7 +152,7 @@ a:any-link:hover {
     color: var(--accent);
 }
 
-/* Override text color for links for Github link */
+/* Override text color for Github link */
 section li a {
     color: var(--ltblue);
 }
@@ -183,6 +166,10 @@ footer {
     font-size: 110%;
 }
 
+h4 {
+    font-size: 110%;
+}
+
 @media screen and (max-width: 992px) {
     .intro {
         flex: 0 0 45%;
@@ -193,17 +180,13 @@ footer {
     }
 
     .card {
-        flex: 1 0 85%;
-        max-width: 80%;
+        flex: 1 0 100%;
+        max-width: 450px;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-   .card {
-    width: 100%;
-   }
-
     header {
         flex-direction: column;
         height: 600px;
@@ -217,24 +200,24 @@ footer {
         align-items: center;
     }
 
-    nav ul li {
-        flex-direction: row;
-        width: 100%;
-        padding: 10px;
-    }
-    
     nav {
         width: 100%;
         
     }
 
-    ul {
+    nav ul li {
+        flex-direction: row;
         width: 100%;
-        
+        padding: 10px;
     }
 
     .project-cards {
         align-content: center;
         justify-content: center;
     }
+
+    .card {
+        width: 100%;
+        max-width: 450px;
+       }
 }
